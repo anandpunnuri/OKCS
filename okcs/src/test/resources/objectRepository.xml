@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<okcs>
+	<LoginPage>
+		<userName type="id">username</userName>
+		<password type="id">password</password>
+		<loginBtn type="id">loginbutton</loginBtn>
+	</LoginPage>
+	
+	<AuthoringPage>
+		<ContentTab type="xpath">//div[@id="rntab"]/ul/li[2]/a
+			<addContent type="xpath"></addContent>
+			<listContent type="xpath">//div[contains(text()\,'FAQ')]/../a[3]</listContent>
+			<AutoSavedContentLink type="xpath">//a[contains(text()\,'Auto Save Summary')]</AutoSavedContentLink>
+		</ContentTab>
+	<GoToAutoSavedContent type="xpath">//span[contains(text()\,'Click here to go to your auto saved content')]</GoToAutoSavedContent>
+	</AuthoringPage>
+	
+	<DocumentPreviewPage>
+		<PropertiesMenu type="xpath">//div[@id='ent1']/a</PropertiesMenu>
+		<EditDocument type="xpath">//a[.='Edit Document']</EditDocument>
+	</DocumentPreviewPage>
+	
+	
+	
+	<AddContentPage>
+		<selectLocale type="id">localeDropDown</selectLocale>
+		<textField type="xpath">//input[starts-with(@testidentifier\,'Content_ContentType_Add')]</textField>
+		<RTAIframe type="xpath">//iframe[contains(@title\,'Rich Text Editor')]</RTAIframe>
+		<RTA type="xpath">//div[@id='cke_1_contents']/iframe</RTA>
+		<checkBox type="xpath">//span[.='CB']/preceding-sibling::input</checkBox>
+		<counter type="xpath"></counter>
+		<date type="xpath">//span[.='DATE']/../../../../following-sibling::table//input</date>
+		<dateTime type="xpath">//span[.='DATETIME']/../../../../following-sibling::table//input</dateTime>
+		<dateTimeTime type="xpath">//span[.='DATETIME']/../../../../following-sibling::table//input[starts-with(@name\,'TIME')]</dateTimeTime>
+		<file type="xpath">//input[@class='normal submitbutton']</file>
+		<float type="xpath">//span[.='FLOAT']/../../../../following-sibling::table//input</float>
+		<integer type="xpath">//span[.='INT']/../../../../following-sibling::table//input</integer>
+		<time type="xpath">//span[.='TIME']/../../../../following-sibling::table//input</time>
+		<EventStartDate type="xpath">//span[.='Event Starts']/../../following-sibling::tr//input</EventStartDate>
+		<EventStarTime type="xpath">//span[.='Event Starts']/../../following-sibling::tr/td[3]//input</EventStarTime>
+		<EventEndDate type="xpath">//span[.='Event Ends']/../../following-sibling::tr//input</EventEndDate>
+		<EventEndTime type="xpath">//span[.='Event Ends']/../../following-sibling::tr/td[3]//input</EventEndTime>
+		<Expandviews type="xpath">//div[@id='TOP_VIEW']//a/img</Expandviews>
+		<addUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Add')]</addUserGroup>
+		<addAllUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Add All')]</addAllUserGroup>
+		<removeUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Remove')]</removeUserGroup>
+		<removeAllUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Remove All')]</removeAllUserGroup>
+		<addProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Add')]</addProduct>
+		<addAllProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Add All')]</addAllProduct>
+		<removeProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Remove')]</removeProduct>
+		<removeAllProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Remove All')]</removeAllProduct>
+		<addCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Add')]</addCategory>
+		<addAllCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Add All')]</addAllCategory>
+		<removeCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Remove')]</removeCategory>
+		<removeAllCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Remove All')]</removeAllCategory>
+		<DisplayOnDate type="xpath">//span[.='Display On']/../../following-sibling::tr//input</DisplayOnDate>
+		<DisplayOnTime type="xpath">//span[.='Display On']/../../following-sibling::tr/td[3]//input</DisplayOnTime>
+		<RemoveAfterDate type="xpath">//span[.='Remove After']/../../following-sibling::tr//input</RemoveAfterDate>
+		<RemoveAfterTime type="xpath">//span[.='Remove After']/../../following-sibling::tr/td[3]//input</RemoveAfterTime>
+		<RemoveAfterAMPM type="xpath">//span[.='Remove After']/../../following-sibling::tr/td[3]//select</RemoveAfterAMPM>
+		<ReviewDate type="xpath">//span[.='Review Date']/../../following-sibling::tr//input</ReviewDate>
+		<ReviewTime type="xpath">//span[.='Review Date']/../../following-sibling::tr/td[3]//input</ReviewTime>
+		<Priority type="xpath">//span[.='Priority/Order']/following-sibling::select</Priority>
+		<DisplayPosition type="xpath">//span[.='Display Position']/following-sibling::select</DisplayPosition>
+		<ReasonForEdit type="xpath">//span[.='Reason for Edit']/../../../../../../following-sibling::tr//textarea</ReasonForEdit>
+		<SaveAndPublish type="xpath">//a[contains(text()\,'Save and Publish Document')]</SaveAndPublish>
+		<SaveAndExit type="xpath">//a[contains(text()\,'Save Document')]</SaveAndExit>
+		<SaveAndContinueEditing type="xpath">//a[contains(text()\,'Save and Continue Editing')]</SaveAndContinueEditing>
+		<Cancel type="xpath">//a[contains(text()\,'Cancel')]</Cancel>
+		
+	</AddContentPage>
+	
+	<EditContentPage>
+		<textField type="xpath">//input[starts-with(@testidentifier\,'Content_ContentType_Add')]</textField>
+		<RTA type="xpath">//html[@dir='ltr']</RTA>
+		<checkBox type="xpath">//span[.='CB']/preceding-sibling::input</checkBox>
+		<counter type="xpath"></counter>
+		<date type="xpath">//span[.='DATE']/../../../../following-sibling::table//input</date>
+		<dateTime type="xpath">//span[.='DATETIME']/../../../../following-sibling::table//input</dateTime>
+		<file type="xpath">//input[@type='file']</file>
+		<float type="xpath">//span[.='FLOAT']/../../../../following-sibling::table//input</float>
+		<integer type="xpath">//span[.='INT']/../../../../following-sibling::table//input</integer>
+		<time type="xpath">//span[.='TIME']/../../../../following-sibling::table//input</time>
+		<EventStartDate type="xpath">//span[.='Event Starts']/../../following-sibling::tr//input</EventStartDate>
+		<EventStarTime type="xpath">//span[.='Event Starts']/../../following-sibling::tr/td[3]//input</EventStarTime>
+		<EventEndDate type="xpath">//span[.='Event Ends']/../../following-sibling::tr//input</EventEndDate>
+		<EventEndTime type="xpath">//span[.='Event Ends']/../../following-sibling::tr/td[3]//input</EventEndTime>
+		<Expandviews type="xpath">//div[@id='TOP_VIEW']//a/img</Expandviews>
+		<addUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Add')]</addUserGroup>
+		<addAllUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Add All')]</addAllUserGroup>
+		<removeUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Remove')]</removeUserGroup>
+		<removeAllUserGroup type="xpath">//span[contains(text()\,'Available User Groups')]/../../../following-sibling::tr//a[contains(text()\,'Remove All')]</removeAllUserGroup>
+		<addProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Add')]</addProduct>
+		<addAllProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Add All')]</addAllProduct>
+		<removeProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Remove')]</removeProduct>
+		<removeAllProduct type="xpath">//span[contains(text()\,'Available Products')]/../../../following-sibling::tr//a[contains(text()\,'Remove All')]</removeAllProduct>
+		<addCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Add')]</addCategory>
+		<addAllCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Add All')]</addAllCategory>
+		<removeCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Remove')]</removeCategory>
+		<removeAllCategory type="xpath">//span[contains(text()\,'Available Categories')]/../../../following-sibling::tr//a[contains(text()\,'Remove All')]</removeAllCategory>
+		<DisplayOnDate type="xpath">//span[.='Display On']/../../following-sibling::tr//input</DisplayOnDate>
+		<DisplayOnTime type="xpath">//span[.='Display On']/../../following-sibling::tr/td[3]//input</DisplayOnTime>
+		<RemoveAfterDate type="xpath">//span[.='Remove After']/../../following-sibling::tr//input</RemoveAfterDate>
+		<RemoveAfterTime type="xpath">//span[.='Remove After']/../../following-sibling::tr/td[3]//input</RemoveAfterTime>
+		<RemoveAfterAMPM type="xpath">//span[.='Remove After']/../../following-sibling::tr/td[3]//select</RemoveAfterAMPM>
+		<ReviewDate type="xpath">//span[.='Review Date']/../../following-sibling::tr//input</ReviewDate>
+		<ReviewTime type="xpath">//span[.='Review Date']/../../following-sibling::tr/td[3]//input</ReviewTime>
+		<Priority type="xpath">//span[.='Priority/Order']/following-sibling::select</Priority>
+		<DisplayPosition type="xpath">//span[.='Display Position']/following-sibling::select</DisplayPosition>
+		<ReasonForEdit type="xpath">//span[.='Reason for Edit']/../../../../../../following-sibling::tr//textarea</ReasonForEdit>
+		<SaveAndPublish type="xpath">//a[contains(text()\,'Save and Publish Document')]</SaveAndPublish>
+		<SaveAndExit type="xpath">//a[contains(text()\,'Save Document')]</SaveAndExit>
+		<SaveAndContinueEditing type="xpath">//a[contains(text()\,'Save and Continue Editing')]</SaveAndContinueEditing>
+		<Cancel type="xpath">//a[contains(text()\,'Cancel')]</Cancel>
+	</EditContentPage>
+
+</okcs>

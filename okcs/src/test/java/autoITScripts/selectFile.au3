@@ -1,0 +1,7 @@
+WinWait("Open","","30")
+ControlFocus("Open","","Edit1")
+Sleep(2000)
+ControlSetText("Open","","Edit1","C:\IphoneCamera.jpg")
+Sleep(2000)
+ControlClick("Open","","Button1")
+Sleep(2000)

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="74415" started-at="2019-12-03T10:29:08Z" finished-at="2019-12-03T10:30:22Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="74415" started-at="2019-12-03T10:29:08Z" finished-at="2019-12-03T10:30:22Z">
+      <class name="okcs.AddArticleTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:okcs.AddArticleTests@5a8e6209]" name="setup" is-config="true" duration-ms="17" started-at="2019-12-03T10:29:08Z" finished-at="2019-12-03T10:29:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="addNewArticle()[pri:0, instance:okcs.AddArticleTests@5a8e6209]" name="addNewArticle" duration-ms="73927" started-at="2019-12-03T10:29:08Z" finished-at="2019-12-03T10:30:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewArticle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:okcs.AddArticleTests@5a8e6209]" name="teardown" is-config="true" duration-ms="410" started-at="2019-12-03T10:30:22Z" finished-at="2019-12-03T10:30:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- okcs.AddArticleTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
